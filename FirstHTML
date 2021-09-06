@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            background-color: rgb(49, 4, 4);
+            height: 50px;
+            color: white;
+        }
+        .navbar ul li{
+            display: inline-block;
+            margin: 15px 15px;
+        }
+        .navbar ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        h2{
+            background-color: rgb(141, 230, 141);
+        color: brown;}
+        h3{background-color:rgb(248, 211, 217);
+        color: darkblue;}
+        body{background-color: rgb(192, 229, 243);}
+        .center{
+            background-color: rgb(156, 20, 20);
+            color: cornsilk;
+            text-align: center;
+            padding: 10px;
+            height: 20px;
+            width: 1333px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <center>
+     <form action="upload.html">
+ <h2>Fill this application form</h2><hr>
+    <h3>Personal Details </h3><br>
+    <table>
+        <tr>
+        <td><label>Name:</label></td>
+        <td><input type="text" placeholder="First Name"></td>
+        <td><input type="text" placeholder="Middle Name"></td>
+        <td><input type="text" placeholder="Last Name"></td>
+    </tr>
+        <tr>
+    <td><label for="reg.no">Registration No.:</label></td>
+    <td><input type="text" id="reg.no"><br></td>
+    </tr>
+   <tr>
+       
+  <td>  <label for="card no">Aadhaar No.:</label></td>
+   <td> <input type="text" id="card no"><br></td>
+</tr>
+<tr>
+   <td> <label for="mob.no">Mobile No.:</label></td>
+   <td><input type="text" placeholder="+91" id="mob.no" ></td>
+    </tr>
+    <tr>
+        <td><label for="email">Email Id(if available):</label></td>
+        <td><input type="text" placeholder="something@gmail.com" id="email" ></td>
+    </tr>
+<tr>
+    <td><label for="gender">Gender:</label></td>
+    <td><select name="gender" id="gender">
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Others">Others</option></select>
+     </td>
+</tr>
+<tr>
+<td><label for="dob">Date of Birth:</label></td>
+<td><input type="date" id="dob"></td>
+</tr>
+<tr>
+    <td><label for="age">Age on 01/01/2021:</label></td>
+    <td><input type="number" id="age"></td>
+    </tr>
+    <tr>
+        <td><label>Father's Name:</label></td>
+        <td><input type="text" placeholder="First Name"></td>
+        <td><input type="text" placeholder="Middle Name"></td>
+        <td><input type="text" placeholder="Last Name"></td>
+    </tr>
+    <tr>
+        <td><label>Mother's Name:</label></td>
+        <td><input type="text" placeholder="First Name"></td>
+        <td><input type="text" placeholder="Middle Name"></td>
+        <td><input type="text" placeholder="Last Name"></td>
+    </tr>
+    <tr>
+        <td><label>Spouse Name:</label></td>
+        <td><input type="text" placeholder="First Name"></td>
+        <td><input type="text" placeholder="Middle Name"></td>
+        <td><input type="text" placeholder="Last Name"></td>
+    </tr>
+    <tr>
+        <td><label for="caste">Select Caste:</label></td>
+        <td><select name="caste" id="caste">
+            <option value="">Select</option>
+            <option value="General">General</option>
+            <option value="obca">OBC-A</option>
+            <option value="obcb">OBC-B</option>
+            <option value="st">ST</option>
+            <option value="sc">SC</option>
+            <option value="ews">EWS</option>
+        </select></td>
+     </tr>
+     <tr>
+         <td><label for="caste no">Certificate No.:</label></td>
+        <td><input type="text" id="caste no" ></td>
+     </tr>
+     <tr>
+         <td>Marital Status:</td>
+         <td>
+             <label for="statusa">
+                 <input type="radio" value="married" name="status" id="statusa">Married
+             </label><br>
+             <label for="statusb">
+                 <input type="radio" value="unmarried" name="status" id="statusb" >Unmarried
+             </label><br>
+             <label for="statusc">
+                 <input type="radio" value="seperated" name="status" id="statusc">Seperated
+             </label><br>
+             <label for="statusd">
+                 <input type="radio" value="divorced" name="status" id="statusd">Divorced
+             </label>
+         </td>
+         </tr>
+       </table>
+
+<center>
+<h3>Contact Details</h3>
+</center>
+
+<table>
+<tr>
+    <td><label for="state">State:</label></td>
+    <td><input type="text" value="West Bengal" id="state"></td>
+</tr>
+<tr>
+    <td><label for="District">District:</label></td>
+    <td><input type="text"  id="District"></td>
+</tr>
+<tr>
+    <td><label for="Police Station">Police Station:</label></td>
+    <td><input type="text"  id="Police Station"></td>
+</tr>
+<tr>
+    <td><label for="Block">City/Block:</label></td>
+    <td><input type="text"  id="Block"></td>
+</tr>
+<tr>
+    <td><label for="GP">Ward/GP:</label></td>
+    <td><input type="text"  id="GP"></td>
+</tr>
+<tr>
+    <td><label for="Village">House No./Village:</label></td>
+    <td><input type="text"  id="Village"></td>
+</tr>
+<tr>
+    <td><label for="Post Office">Post Office:</label></td>
+    <td><input type="text"  id="Post Office"></td>
+</tr>
+<tr>
+    <td><label for="Pin Code">Pin Code:</label></td>
+    <td><input type="text"  id="Pin Code"></td>
+</tr>
+
+</table>
+<center>
+<h3>Enclosure List</h3>
+</center>
+<table>
+<tr>
+    <td><input type="checkbox">Coloured Passport Size Photograph*</td>
+</tr>
+<tr>
+    <td>
+        <input type="checkbox">Copy Of PAN card*
+    </td>
+</tr>
+<tr>
+    <td><input type="checkbox">Copy Of Aadhaar Card*</td>
+</tr>
+<tr>
+    <td><input type="checkbox">Copy of Certificate*</td>
+</tr>
+
+
+</table><hr>
+
+    <table>
+        <tr>
+            <td><input type="checkbox">The above informations are correct to the best of my knowledge.</td>
+        </tr>
+       
+<tr>
+    <td><input type="Submit" value="Submit"></a></td>
+    <td><input type="Reset" value="Reset"></td>
+
+<td>
+<label for="file">Process Done</label>
+<progress id="file" max="100" value="70"> 70% </progress>
+</td>
+</tr>
+</table>
+</center>
+</div>
+</form>
+<footer>
+    <p class="center">
+        Copyright &copy;Hiru'sCyb-All rights reserved.
+    </p>
+</footer>
+
+</body>
+</html>
