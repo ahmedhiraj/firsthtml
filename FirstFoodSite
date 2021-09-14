@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HungryHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Dancing Script', cursive;
+
+        }
+        .reload{
+            height: 2px;
+            background-color: red;
+            animation: reloadAnime 1.5s ease-in-out 1 ;
+        }
+        @keyframes reloadAnime {
+            0%{
+                width: 25%;
+            }
+            25%{
+                width: 50%;
+            }
+            50%{
+                width: 75%;
+            }
+            100%{
+                width: 100%;
+            }
+
+        }
+
+        .container {
+            background-image: url(food1.jpg);
+            background-repeat: repeat-x;
+            height: 70px;
+            color: white;
+            display: grid;
+            grid-template-columns: 400px 430px auto 160px;
+        }
+
+        .box1 ul li {
+            display: inline-flex;
+            list-style: none;
+            padding-top: 20px;
+            padding-left: 40px;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        .box2 h2 {
+            font-size: xx-large;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .box3 input {
+            width: 350px;
+            height: 30px;
+            border-radius: 20px;
+            outline: none;
+            margin-top: 20px;
+        }
+
+        .log ul li {
+            display: inline-flex;
+            list-style: none;
+            margin-left: 8px;
+            padding-top: 20px;
+            font-size: larger;
+            cursor: pointer;
+
+        }
+
+        main {
+            height: 1180px;
+        }
+
+        img {
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+
+        .container1 {
+            background-color: ghostwhite;
+            height: 60px;
+            padding-top: 30px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 120px 120px 160px 160px 160px 160px auto;
+            position: sticky;
+            top: 0;
+
+
+        }
+
+        .container1 input {
+            color: rgb(41, 6, 65);
+            font-size: .8rem;
+            cursor: pointer;
+        }
+
+        .container1 .box10 #srch {
+            width: 350px;
+            height: 27px;
+            border-radius: 20px;
+            outline: none;
+            cursor: auto;
+        }
+
+        .container2 {
+            margin: 0px 100px;
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+        .grab {
+            margin: 30px 100px;
+        }
+
+        .container3 {
+            margin: 0px 100px;
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+        .spot {
+            margin: 30px 100px;
+        }
+
+
+        .food {
+            margin: 40px 100px;
+        }
+
+        .container4 {
+            margin: 0px 100px;
+            display: inline-flex;
+            justify-content: space-between;
+            text-align: start;
+        }
+
+        span {
+            color: green;
+        }
+
+        .last {
+            text-align: center;
+            margin:20px 0px;
+        }
+
+        footer {
+            height: 250px;
+            background-color: honeydew;
+        }
+
+        .room {
+            margin: 0px 60px;
+            height: 150px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+       
+        .room .foot2 ul li{
+            list-style: none;
+            cursor: pointer;
+        }
+       
+        .room .foot3 ul li{
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .copy {
+            height: 70px;
+            margin: 0px 100px;
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <div class="reload"></div>
+    <header>
+        <div class="container">
+            <div class="box1">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>&#9742; Contact</li>
+                </ul>
+            </div>
+            <div class="box2">
+                <h2>HungryHub&#174;</h2>
+            </div>
+            <div class="box3">
+                <input type="text" placeholder="Enter your PIN or location name">
+            </div>
+            <div class="log">
+                <ul>
+                    <li>Log in</li>
+                    <li>Sign up</li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="container1">
+            <div class="box4">
+                <input type="button" value="&#9779;Filters">
+            </div>
+            <div class="box5">
+                <input type="button" value="Rating 4.0+">
+            </div>
+            <div class="box6">
+                <input type="button" value="Safe and Hygienic">
+            </div>
+            <div class="box7">
+                <input type="button" value="Pure Veg">
+            </div>
+            <div class="box8">
+                <input type="button" value="&#8645;Delivery Time">
+            </div>
+            <div class="box9">
+                <input type="button" value="Great Offers">
+            </div>
+            <div class="box10">
+                <input id="srch" type="text" placeholder="Search your favourite foods or restaurants          &#128269;">
+                <button>Search</button>
+            </div>
+        </div>
+        <div class="grab">
+            <h2>Grab Your Food</h2>
+        </div>
+        <div class="container2">
+
+            <div class="box11">
+                <img src="biryani.jpg" width="200px" height="200px">Biryani
+            </div>
+            <div class="box12">
+                <img src="chicken.jpg" width="200px" height="200px">Chicken
+            </div>
+            <div class="box13">
+                <img src="thali.jpg" width="200px" height="200px">Thali
+            </div>
+            <div class="box14">
+                <img src="paneer.jpg" width="200px" height="200px">Paneer
+            </div>
+            <div class="box15">
+                <img src="kulcha.jpg" width="200px" height="200px">Kulcha
+            </div>
+        </div>
+        <div class="spot">
+            <h2>Top Restaurants in your area</h2>
+        </div>
+        <div class="container3">
+            <div class="box16">
+                <img src="kfc.png" width="200px" height="200px">KFC
+            </div>
+            <div class="box17">
+                <img src="dominos.jpg" width="200px" height="200px">Dominos
+            </div>
+            <div class="box18">
+                <img src="McDonalds.jpg" width="200px" height="200px">McDonalds
+            </div>
+            <div class="box19">
+                <img src="subway.jpg" width="200px" height="200px">Subway
+            </div>
+            <div class="box20">
+                <img src="ccd.jpg" width="200px" height="200px">CCD
+            </div>
+        </div>
+        <div class="food">
+            <h2>Best food to grab minimum @50% discount</h2>
+        </div>
+        <div class="container4">
+            <div class="box21">
+                <img src="roll.jpg" width="280px" height="280px">Chicken Roll <span> @75% OFF</span>
+            </div>
+            <div class="box22">
+                <img src="mughlai.jpg" width="250px" height="280px">Mughlai <span> @50% OFF</span>
+            </div>
+            <div class="box23">
+                <img src="kadaipaneer.jpg" width="280px" height="280px">Kadai Paneer <span> @50% OFF</span>
+            </div>
+            <div class="box24">
+                <img src="burgers.jpg" width="280px" height="280px">Burgers <span> @65% OFF</span>
+            </div>
+
+        </div>
+
+    </main>
+    <div class="last">
+        <h2>End of search results &#8635;</h2>
+    </div>
+    <footer>
+        <div class="room">
+            <div class="foot1">
+                <h3>HungryHub&#174;</h3>
+                <p>Head office: Palace Hub,SN Banerjee Road,Kolkata-45</p>
+                <p>Regd. office: Unitech,Action Area1,Newtown,Kolkata-152</p>
+                <p>Drop your Grievance: hungryhub@gmail.com</p>
+            </div>
+            <div class="foot2">
+                <h3>For You</h3>
+                <ul>
+                    <li ><a href="#"></a>Feedback</li>
+                    <li ><a href="#"></a>Report Fraud</li>
+                    <li ><a href="#"></a>Blog</li>
+                    <li ><a href="#"></a>Careers</li>
+                </ul>
+            </div>
+            <div class="foot3">
+                <h3>Social Links</h3>
+                <ul>
+                    <li ><a href="#"></a>Facebook</li>
+                    <li ><a href="#"></a>Twitter</li>
+                    <li ><a href="#"></a>Instagram</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="copy">
+            By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content
+            Policies. All trademarks are properties of their respective owners.2021 © HungryHub™ Ltd. All rights
+            reserved.
+        </div>
+       
+    </footer>
+    
+
+</body>
+
+</html>
